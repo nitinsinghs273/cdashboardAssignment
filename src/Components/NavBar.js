@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
-import { Account } from "../Pages";
 
 function NavBar() {
   const navigate = useNavigate();
