@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-import { Outlet, useNavigate } from "react-router";
+import { Outlet } from "react-router";
 import Card from "../Components/Card";
 import StickyButton from "../utils/StickyButton";
 
 import Main from "../Components/Main";
 
 function Account() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate("/account/allpeople");
-  }, []);
-
   return (
     <div>
       <Main />{" "}

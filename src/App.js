@@ -18,12 +18,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<Account />} />
-          <Route path="/home" element={<Home />} />
+          <Route index path="/home" element={<Home />} />
           <Route path="/availability" element={<Availibilty />} />
           <Route path="/helppage" element={<HelpPage />} />
           <Route path="/integration" element={<Integration />} />
           <Route path="/account" element={<Account />}>
+            <Route index element={<AllPeople />} />
             <Route path="allpeople" element={<AllPeople />} />
             <Route path="groups" element={<Groups />} />
             <Route path="managedevents" element={<Managedevents />} />

@@ -7,7 +7,7 @@ function Card({ src, title, children }) {
       <div className="flex flex-col gap-4">
         <h2 className="font-bold ">{title}</h2>
         <p>{children}</p>
-        <a href="#" className="text-blue-600">
+        <a href="https://youtube.com" className="text-blue-600">
           Watch Video
         </a>
       </div>
