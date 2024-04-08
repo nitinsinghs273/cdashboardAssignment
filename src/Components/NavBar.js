@@ -22,7 +22,7 @@ function NavBar() {
       <ul className="flex justify-center items-center gap-5">
         <li>
           <NavLink
-            to="/home"
+            to="/"
             className={({ isActive }) => (isActive ? "nav-link" : "")}
           >
             Home
