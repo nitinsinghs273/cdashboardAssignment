@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index path="/home" element={<Home />} />
           <Route path="/availability" element={<Availibilty />} />
           <Route path="/helppage" element={<HelpPage />} />
@@ -28,6 +28,7 @@ function App() {
             <Route path="groups" element={<Groups />} />
             <Route path="managedevents" element={<Managedevents />} />
           </Route>
+          <Route path="*" element={<h1>Page Not Found</h1>} />
           Account
         </Route>
       </Routes>
